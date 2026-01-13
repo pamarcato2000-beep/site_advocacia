@@ -128,23 +128,20 @@
   <section id="contato" class="py-16 md:py-24 bg-[#1c1c1c] text-white">
     <div class="container mx-auto px-6 max-w-4xl">
       <div class="grid grid-cols-1 md:grid-cols-2 gap-12">
+
+        <!-- TEXTO -->
         <div class="text-center md:text-left">
           <h2 class="text-3xl md:text-4xl font-serif mb-6">Vamos conversar?</h2>
-          <p class="text-stone-400 mb-8">Preencha o formulário ou chame diretamente no WhatsApp para um atendimento
-            prioritário.</p>
+          <p class="text-stone-400 mb-8">
+            Preencha o formulário ou chame diretamente no WhatsApp para um atendimento prioritário.
+          </p>
           <div class="space-y-4 text-sm md:text-base">
             <p>📍 Av. Paulista, 1000 - SP</p>
             <p>📧 contato@advocacia.com.br</p>
           </div>
         </div>
-        
-        <!-- EMAILJS -->
-        <script>
-          (function () {
-            emailjs.init("VvIdNiqc5GjWd_X3v");
-          })();
-        </script>
 
+        <!-- FORMULÁRIO -->
         <form id="contact-form" class="space-y-4 text-stone-900">
           <input type="text" name="nome" placeholder="Seu Nome" required
             class="w-full p-4 bg-stone-100 focus:outline-none focus:ring-2 ring-[#D4AF37]" />
@@ -155,20 +152,27 @@
           <textarea name="mensagem" placeholder="Como posso ajudar?" rows="4" required
             class="w-full p-4 bg-stone-100 focus:outline-none focus:ring-2 ring-[#D4AF37]"></textarea>
 
-          <button type="submit"
-            class="w-full py-4 bg-[#621B2E] text-white font-bold uppercase tracking-widest hover:bg-white hover:text-[#1c1c1c] transition duration-500 text-xs">
+          <button type="submit" class="w-full py-4 bg-[#621B2E] text-white font-bold uppercase tracking-widest
+                 hover:bg-white hover:text-[#1c1c1c] transition duration-500 text-xs">
             Enviar Mensagem
           </button>
         </form>
+
       </div>
     </div>
   </section>
 
+  <script src="https://cdn.jsdelivr.net/npm/emailjs-com@3/dist/email.min.js"></script>
+  <script>
+    (function () {
+      emailjs.init("VvIdNiqc5GjWd_X3v");
+    })();
+  </script>
+  <script src="js/form.js"></script>
   <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.12.2/gsap.min.js"></script>
   <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.12.2/ScrollTrigger.min.js"></script>
   <script src="js/animations.js"></script>
   <script src="js/main.js"></script>
-  <script src="https://cdn.jsdelivr.net/npm/emailjs-com@3/dist/email.min.js"></script>
   <script src="js/form.js"></script>
 </body>
 
