@@ -162,6 +162,24 @@
     </div>
   </section>
 
+  <!-- POPUP DE SUCESSO -->
+  <div id="success-popup"
+    class="fixed inset-0 bg-black/60 flex items-center justify-center opacity-0 pointer-events-none transition duration-500 z-[999]">
+
+    <div class="bg-white rounded-lg p-8 max-w-sm text-center transform scale-90 transition duration-500">
+      <h3 class="text-2xl font-serif text-[#621B2E] mb-4">
+        Mensagem enviada!
+      </h3>
+      <p class="text-stone-600 mb-6 text-sm">
+        Recebemos seu contato e em breve retornaremos.
+      </p>
+      <button onclick="closePopup()"
+        class="bg-[#621B2E] text-white px-6 py-2 rounded-full text-sm hover:bg-[#4e1525] transition">
+        Fechar
+      </button>
+    </div>
+  </div>
+
   <script src="https://cdn.jsdelivr.net/npm/emailjs-com@3/dist/email.min.js"></script>
   <script>
     (function () {
