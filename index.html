@@ -137,17 +137,28 @@
             <p>📧 contato@advocacia.com.br</p>
           </div>
         </div>
-        <form action="https://formspree.io/f/mqeeknbd" method="POST" method="POST" class="space-y-4 text-stone-900">
-          <input type="text" name="nome" placeholder="Seu Nome"
-            class="w-full p-4 bg-stone-100 focus:outline-none focus:ring-2 ring-[#D4AF37]">
-          <input type="email" name="email" placeholder="Seu E-mail"
-            class="w-full p-4 bg-stone-100 focus:outline-none focus:ring-2 ring-[#D4AF37]">
-          <textarea name="mensagem" placeholder="Como posso ajudar?" rows="4"
+        
+        <!-- EMAILJS -->
+        <script>
+          (function () {
+            emailjs.init("VvIdNiqc5GjWd_X3v");
+          })();
+        </script>
+
+        <form id="contact-form" class="space-y-4 text-stone-900">
+          <input type="text" name="nome" placeholder="Seu Nome" required
+            class="w-full p-4 bg-stone-100 focus:outline-none focus:ring-2 ring-[#D4AF37]" />
+
+          <input type="email" name="email" placeholder="Seu E-mail" required
+            class="w-full p-4 bg-stone-100 focus:outline-none focus:ring-2 ring-[#D4AF37]" />
+
+          <textarea name="mensagem" placeholder="Como posso ajudar?" rows="4" required
             class="w-full p-4 bg-stone-100 focus:outline-none focus:ring-2 ring-[#D4AF37]"></textarea>
-          <button
-            class="w-full py-4 bg-[#621B2E] text-white font-bold uppercase tracking-widest hover:bg-white hover:text-[#1c1c1c] transition duration-500 text-xs"
-            type="submit">Enviar
-            Mensagem</button>
+
+          <button type="submit"
+            class="w-full py-4 bg-[#621B2E] text-white font-bold uppercase tracking-widest hover:bg-white hover:text-[#1c1c1c] transition duration-500 text-xs">
+            Enviar Mensagem
+          </button>
         </form>
       </div>
     </div>
@@ -157,6 +168,8 @@
   <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.12.2/ScrollTrigger.min.js"></script>
   <script src="js/animations.js"></script>
   <script src="js/main.js"></script>
+  <script src="https://cdn.jsdelivr.net/npm/emailjs-com@3/dist/email.min.js"></script>
+  <script src="js/form.js"></script>
 </body>
 
 </html>
