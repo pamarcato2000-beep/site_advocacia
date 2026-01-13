@@ -11,8 +11,8 @@ const mobileLinks = document.querySelectorAll('.mobile-link');
 if (menuBtn && mobileMenu) {
     menuBtn.addEventListener('click', () => {
         mobileMenu.classList.toggle('hidden');
-        // Animação opcional: suave entrada do menu
-        if (!mobileMenu.classList.contains('hidden')) {
+
+        if (!mobileMenu.classList.contains('hidden') && window.gsap) {
             gsap.from("#mobile-menu a", {
                 opacity: 0,
                 y: 10,
@@ -35,11 +35,10 @@ window.addEventListener('scroll', () => {
     const nav = document.getElementById('navbar');
     if (window.scrollY > 50) {
         nav.classList.add('nav-active');
-        // Opcional: diminui o padding ao rolar para um look mais clean
-        nav.classList.replace('py-4', 'py-2');
+        nav.classList.replace('py-6', 'py-3');
     } else {
         nav.classList.remove('nav-active');
-        nav.classList.replace('py-2', 'py-4');
+        nav.classList.replace('py-3', 'py-6');
     }
 });
 
@@ -51,7 +50,7 @@ const form = document.querySelector('form');
 if (form) {
     form.addEventListener('submit', (e) => {
         e.preventDefault();
-        
+
         // Aqui você pode adicionar uma animação de "Enviando..." no botão
         const btn = form.querySelector('button');
         const btnText = btn.innerText;
