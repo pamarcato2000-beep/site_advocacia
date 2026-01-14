@@ -1,5 +1,18 @@
 # ⚖️ Site Institucional – Advocacia
 
+---
+
+## 👤 Autor
+
+Desenvolvido por **Pedro Afonso**  
+💻 Analista e Desenvolvedor de Sistemas  
+
+📫 Contato:
+- GitHub: https://github.com/pamarcato2000-beep
+- LinkedIn: https://www.linkedin.com/in/pedro-afonso-13ab35246/
+- Email: pdornelasmarcato@gmail.com
+
+
 Site institucional moderno e responsivo desenvolvido para apresentação profissional de serviços jurídicos, com foco em elegância, clareza e conversão de clientes.
 
 🔗 **Projeto focado em performance, UX e comunicação profissional.**
