@@ -1,5 +1,7 @@
 const form = document.getElementById("contact-form");
 const popup = document.getElementById("success-popup");
+emailjs.init("VvIdNiqc5GjWd_X3v");
+
 
 form.addEventListener("submit", function (e) {
   e.preventDefault();

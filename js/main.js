@@ -43,31 +43,6 @@ window.addEventListener('scroll', () => {
 });
 
 // ==========================================
-// LÓGICA DO FORMULÁRIO DE CONTATO
-// ==========================================
-
-const form = document.querySelector('form');
-if (form) {
-    form.addEventListener('submit', (e) => {
-        e.preventDefault();
-
-        // Aqui você pode adicionar uma animação de "Enviando..." no botão
-        const btn = form.querySelector('button');
-        const btnText = btn.innerText;
-        btn.innerText = "ENVIANDO...";
-        btn.disabled = true;
-
-        // Simulação de envio (Timeout para parecer real)
-        setTimeout(() => {
-            alert('Mensagem enviada com sucesso! Em breve entraremos em contato.');
-            form.reset();
-            btn.innerText = btnText;
-            btn.disabled = false;
-        }, 1500);
-    });
-}
-
-// ==========================================
 // REDIRECIONAMENTO WHATSAPP (UTILITY)
 // ==========================================
 // Função caso queira logar cliques nos botões de conversão
