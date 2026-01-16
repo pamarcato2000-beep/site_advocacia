@@ -1,196 +1,333 @@
 <!DOCTYPE html>
 <html lang="pt-br">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Advocacia Especializada | Miriam Souza</title>
 
-<head>
-  <meta charset="UTF-8">
-  <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>Advocacia Especializada | Miriam Souza</title>
+    <script src="https://cdn.tailwindcss.com"></script>
+    <link
+      href="https://fonts.googleapis.com/css2?family=Cormorant+Garamond:wght@600&family=Montserrat:wght@300;400;600&display=swap"
+      rel="stylesheet"
+    />
+    <link rel="stylesheet" href="css/style.css" />
+  </head>
 
-  <script src="https://cdn.tailwindcss.com"></script>
-  <link
-    href="https://fonts.googleapis.com/css2?family=Cormorant+Garamond:wght@600&family=Montserrat:wght@300;400;600&display=swap"
-    rel="stylesheet">
-  <link rel="stylesheet" href="css/style.css">
-</head>
+  <body class="bg-[#f4f4f4] overflow-x-hidden">
+    <header
+      id="navbar"
+      class="fixed w-full z-[100] transition-all duration-500 py-6"
+    >
+      <div class="container mx-auto px-6 flex justify-between items-center">
+        <div
+          class="logo text-xl md:text-2xl font-serif tracking-widest text-white"
+        >
+          MIRIAM <span class="text-[#D4AF37]">SOUZA</span>
+        </div>
 
-<body class="bg-[#f4f4f4] overflow-x-hidden">
+        <nav
+          class="hidden md:flex space-x-8 text-white text-xs uppercase tracking-[0.2em]"
+        >
+          <a href="advogada.html" class="hover:text-[#D4AF37] transition"
+            >Sobre</a
+          >
+          <a href="#areas" class="hover:text-[#D4AF37] transition">Atuação</a>
+          <a href="#contato" class="hover:text-[#D4AF37] transition">Contato</a>
+        </nav>
 
-  <header id="navbar" class="fixed w-full z-[100] transition-all duration-500 py-6">
-    <div class="container mx-auto px-6 flex justify-between items-center">
-      <div class="logo text-xl md:text-2xl font-serif tracking-widest text-white">
-        MIRIAM <span class="text-[#D4AF37]">SOUZA</span>
+        <div class="flex items-center gap-4">
+          <a
+            href="https://wa.me/5511999426368?text=Olá,%20vim%20pelo%20site%20e%20gostaria%20de%20mais%20informações."
+            class="hidden sm:block whatsapp-btn bg-[#621B2E] text-white px-6 py-2 rounded-full font-bold text-xs hover:bg-white hover:text-[#1c1c1c] transition"
+            >WHATSAPP</a
+          >
+
+          <button
+            id="menu-btn"
+            class="md:hidden text-[#D4AF37] focus:outline-none"
+          >
+            <svg
+              class="w-8 h-8"
+              fill="none"
+              stroke="currentColor"
+              viewBox="0 0 24 24"
+            >
+              <path
+                stroke-linecap="round"
+                stroke-linejoin="round"
+                stroke-width="2"
+                d="M4 6h16M4 12h16M4 18h16"
+              ></path>
+            </svg>
+          </button>
+        </div>
       </div>
 
-      <nav class="hidden md:flex space-x-8 text-white text-xs uppercase tracking-[0.2em]">
-        <a href="advogada.html" class="hover:text-[#D4AF37] transition">Sobre</a>
-        <a href="#areas" class="hover:text-[#D4AF37] transition">Atuação</a>
-        <a href="#contato" class="hover:text-[#D4AF37] transition">Contato</a>
-      </nav>
+      <div
+        id="mobile-menu"
+        class="hidden bg-[#1c1c1c]/fb backdrop-blur-md w-full flex flex-col items-center py-8 space-y-6 md:hidden border-t border-stone-800"
+      >
+        <a
+          href="advogada.html"
+          class="mobile-link text-white uppercase text-sm tracking-widest"
+          >Sobre</a
+        >
+        <a
+          href="#areas"
+          class="mobile-link text-white uppercase text-sm tracking-widest"
+          >Atuação</a
+        >
+        <a
+          href="#contato"
+          class="mobile-link text-white uppercase text-sm tracking-widest"
+          >Contato</a
+        >
+        <a
+          href="https://wa.me/5511999426368?text=Olá,%20vim%20pelo%20site%20e%20gostaria%20de%20mais%20informações."
+          class="bg-[#D4AF37] text-white px-8 py-3 rounded-full font-bold text-xs"
+          >WHATSAPP</a
+        >
+      </div>
+    </header>
 
-      <div class="flex items-center gap-4">
-        <a href="https://wa.me/5511999426368?text=Olá,%20vim%20pelo%20site%20e%20gostaria%20de%20mais%20informações."
-          class="hidden sm:block whatsapp-btn bg-[#621B2E] text-white px-6 py-2 rounded-full font-bold text-xs hover:bg-white hover:text-[#1c1c1c] transition">WHATSAPP</a>
+    <section
+      class="relative min-h-screen flex items-center bg-[#1c1c1c] overflow-hidden pt-20 lg:pt-0 pb-24 md:pb-32 lg:pb-0"
+    >
+      <div
+        class="container mx-auto px-6 grid grid-cols-1 lg:grid-cols-2 items-center gap-12"
+      >
+        <div
+          class="text-white z-10 text-center lg:text-left order-2 lg:order-1"
+        >
+          <h1
+            class="hero-title text-4xl sm:text-5xl md:text-7xl lg:text-8xl font-serif mb-6 leading-tight"
+          >
+            Justiça com <br />
+            <span class="italic text-[#D4AF37]">Elegância.</span>
+          </h1>
+          <p
+            class="hero-subtitle text-stone-400 text-base md:text-lg mb-8 max-w-md mx-auto lg:mx-0"
+          >
+            Soluções jurídicas estratégicas para quem busca segurança e
+            excelência técnica.
+          </p>
+          <div class="flex justify-center lg:justify-start">
+            <a
+              href="#contato"
+              class="border border-[#D4AF37] text-[#D4AF37] px-8 py-4 hover:bg-[#621B2E] hover:text-white transition duration-500 text-xs font-bold tracking-widest"
+              >SOLICITAR SERVIÇO</a
+            >
+          </div>
+        </div>
 
-        <button id="menu-btn" class="md:hidden text-[#D4AF37] focus:outline-none">
-          <svg class="w-8 h-8" fill="none" stroke="currentColor" viewBox="0 0 24 24">
-            <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M4 6h16M4 12h16M4 18h16"></path>
-          </svg>
+        <div
+          class="relative order-1 lg:order-2 flex justify-center md:justify-end md:-mr-6"
+        >
+          <div
+            class="main-image-wrapper relative z-10 scale-90 sm:scale-100 lg:scale-110 lg:translate-x-8 cursor-pointer"
+            onclick="window.location.href='advogada.html'"
+          >
+            <img
+              src="assets/hero1.png"
+              class="mx-auto lg:ml-auto rounded-lg transition duration-700 max-h-[400px] lg:max-h-none hover:grayscale hover:scale-105"
+              alt="Advogada"
+            />
+          </div>
+          <div
+            class="hidden sm:block floating-shape absolute -bottom-10 -left-10 w-32 h-32 lg:w-40 lg:h-40 border-2 border-[#D4AF37] -z-10"
+          ></div>
+        </div>
+      </div>
+    </section>
+
+    <section id="areas" class="py-16 md:py-24 bg-white">
+      <div class="container mx-auto px-6">
+        <div class="text-center mb-12 md:mb-16">
+          <h2 class="text-3xl md:text-4xl font-serif text-stone-800">
+            Especialidades
+          </h2>
+          <div class="w-20 h-1 bg-[#621B2E] mx-auto mt-4"></div>
+        </div>
+
+        <div
+          class="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 gap-6 md:gap-10"
+        >
+          <div
+            class="service-card p-8 md:p-10 bg-[#f9f9f9] border border-stone-100 relative group overflow-hidden"
+          >
+            <div
+              class="card-bg absolute inset-0 bg-[#1c1c1c] translate-y-full transition-transform duration-500 group-hover:translate-y-0"
+            ></div>
+            <div
+              class="relative z-10 transition-colors duration-500 group-hover:text-white"
+            >
+              <span class="text-3xl md:text-4xl block mb-6">⚖️</span>
+              <h3 class="text-xl md:text-2xl font-serif mb-4">Direito Civil</h3>
+              <p
+                class="text-stone-500 group-hover:text-stone-300 text-sm md:text-base"
+              >
+                Consultoria completa para proteção de bens e direitos
+                individuais.
+              </p>
+            </div>
+          </div>
+          <div
+            class="service-card p-8 md:p-10 bg-[#f9f9f9] border border-stone-100 relative group overflow-hidden"
+          >
+            <div
+              class="card-bg absolute inset-0 bg-[#621B2E] translate-y-full transition-transform duration-500 group-hover:translate-y-0"
+            ></div>
+            <div
+              class="relative z-10 transition-colors duration-500 group-hover:text-white"
+            >
+              <span class="text-3xl md:text-4xl block mb-6">💼</span>
+              <h3 class="text-xl md:text-2xl font-serif mb-4">Empresarial</h3>
+              <p
+                class="text-stone-500 group-hover:text-stone-300 text-sm md:text-base"
+              >
+                Blindagem jurídica para empresas em crescimento exponencial.
+              </p>
+            </div>
+          </div>
+          <div
+            class="service-card p-8 md:p-10 bg-[#f9f9f9] border border-stone-100 relative group overflow-hidden"
+          >
+            <div
+              class="card-bg absolute inset-0 bg-[#1c1c1c] translate-y-full transition-transform duration-500 group-hover:translate-y-0"
+            ></div>
+            <div
+              class="relative z-10 transition-colors duration-500 group-hover:text-white"
+            >
+              <span class="text-3xl md:text-4xl block mb-6">🌿</span>
+              <h3 class="text-xl md:text-2xl font-serif mb-4">Ambiental</h3>
+              <p
+                class="text-stone-500 group-hover:text-stone-300 text-sm md:text-base"
+              >
+                Adequação e defesa em normas de sustentabilidade e compliance.
+              </p>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <section id="contato" class="py-16 md:py-24 bg-[#1c1c1c] text-white">
+      <div class="container mx-auto px-6 max-w-4xl">
+        <div class="grid grid-cols-1 md:grid-cols-2 gap-12">
+          <!-- TEXTO -->
+          <div class="text-center md:text-left">
+            <h2 class="text-3xl md:text-4xl font-serif mb-6">
+              Vamos conversar?
+            </h2>
+            <p class="text-stone-400 mb-8">
+              Preencha o formulário ou chame diretamente no WhatsApp para um
+              atendimento prioritário.
+            </p>
+            <div class="space-y-4 text-sm md:text-base">
+              <p>📍 Av. Paulista, 1000 - SP</p>
+              <p>📧 contato@advocacia.com.br</p>
+            </div>
+          </div>
+
+          <!-- FORMULÁRIO -->
+          <form id="contact-form" class="space-y-4 text-stone-900">
+            <input
+              type="text"
+              name="nome"
+              placeholder="Seu Nome"
+              required
+              class="w-full p-4 bg-stone-100 focus:outline-none focus:ring-2 ring-[#D4AF37]"
+            />
+
+            <input
+              type="email"
+              name="email"
+              placeholder="Seu E-mail"
+              required
+              class="w-full p-4 bg-stone-100 focus:outline-none focus:ring-2 ring-[#D4AF37]"
+            />
+
+            <textarea
+              name="mensagem"
+              placeholder="Como posso ajudar?"
+              rows="4"
+              required
+              class="w-full p-4 bg-stone-100 focus:outline-none focus:ring-2 ring-[#D4AF37]"
+            ></textarea>
+
+            <button
+              type="submit"
+              class="w-full py-4 bg-[#621B2E] text-white font-bold uppercase tracking-widest hover:bg-white hover:text-[#1c1c1c] transition duration-500 text-xs"
+            >
+              Enviar Mensagem
+            </button>
+            <div
+              class="mt-4 flex items-center justify-center gap-2 text-sm text-gray-500"
+            >
+              <span>🔒</span>
+              <span>Comunicação segura e confidencial</span>
+            </div>
+
+            <p class="text-[11px] text-stone-500 text-center leading-relaxed">
+              Ao enviar este formulário, você concorda com nossa
+              <a
+                href="politica-de-privacidade.html"
+                class="underline hover:text-white transition"
+              >
+                Política de Privacidade
+              </a>
+              e autoriza o uso dos dados exclusivamente para contato
+              profissional.
+            </p>
+          </form>
+        </div>
+      </div>
+    </section>
+
+    <!-- POPUP DE SUCESSO -->
+    <div
+      id="success-popup"
+      class="fixed inset-0 bg-black/60 flex items-center justify-center opacity-0 pointer-events-none transition duration-500 z-[999]"
+    >
+      <div
+        class="bg-white rounded-lg p-8 max-w-sm text-center transform scale-90 transition duration-500"
+      >
+        <h3 class="text-2xl font-serif text-[#621B2E] mb-4">
+          Mensagem enviada!
+        </h3>
+        <p class="text-stone-600 mb-6 text-sm">
+          Recebemos seu contato e em breve retornaremos.
+        </p>
+        <button
+          onclick="closePopup()"
+          class="bg-[#621B2E] text-white px-6 py-2 rounded-full text-sm hover:bg-[#4e1525] transition"
+        >
+          Fechar
         </button>
       </div>
     </div>
 
-    <div id="mobile-menu"
-      class="hidden bg-[#1c1c1c]/fb backdrop-blur-md w-full flex flex-col items-center py-8 space-y-6 md:hidden border-t border-stone-800">
-      <a href="advogada.html" class="mobile-link text-white uppercase text-sm tracking-widest">Sobre</a>
-      <a href="#areas" class="mobile-link text-white uppercase text-sm tracking-widest">Atuação</a>
-      <a href="#contato" class="mobile-link text-white uppercase text-sm tracking-widest">Contato</a>
-      <a href="https://wa.me/5511999426368?text=Olá,%20vim%20pelo%20site%20e%20gostaria%20de%20mais%20informações."
-        class="bg-[#D4AF37] text-white px-8 py-3 rounded-full font-bold text-xs">WHATSAPP</a>
-    </div>
-  </header>
+    <footer class="bg-gray-900 text-gray-400 py-8">
+      <div class="max-w-6xl mx-auto px-4 text-center space-y-3">
+        <p class="text-sm font-semibold text-white">Dra. Miriam Souza</p>
 
-  <section
-    class="relative min-h-screen flex items-center bg-[#1c1c1c] overflow-hidden pt-20 lg:pt-0 pb-24 md:pb-32 lg:pb-0">
-    <div class="container mx-auto px-6 grid grid-cols-1 lg:grid-cols-2 items-center gap-12">
-      <div class="text-white z-10 text-center lg:text-left order-2 lg:order-1">
-        <h1 class="hero-title text-4xl sm:text-5xl md:text-7xl lg:text-8xl font-serif mb-6 leading-tight">
-          Justiça com <br> <span class="italic text-[#D4AF37]">Elegância.</span>
-        </h1>
-        <p class="hero-subtitle text-stone-400 text-base md:text-lg mb-8 max-w-md mx-auto lg:mx-0">
-          Soluções jurídicas estratégicas para quem busca segurança e excelência técnica.
+        <p class="text-sm">OAB/SP 12.345</p>
+
+        <p class="text-xs">
+          Advocacia pautada na ética, transparência e responsabilidade
+          profissional.
         </p>
-        <div class="flex justify-center lg:justify-start">
-          <a href="#contato"
-            class="border border-[#D4AF37] text-[#D4AF37] px-8 py-4 hover:bg-[#621B2E] hover:text-white transition duration-500 text-xs font-bold tracking-widest">SOLICITAR
-            SERVIÇO</a>
-        </div>
       </div>
+    </footer>
 
-      <div class="relative order-1 lg:order-2 flex justify-center md:justify-end md:-mr-6">
-        <div class="main-image-wrapper relative z-10 scale-90 sm:scale-100 lg:scale-110 lg:translate-x-8 cursor-pointer"
-          onclick="window.location.href='advogada.html'">
-          <img src="assets/hero1.png" class="mx-auto lg:ml-auto rounded-lg transition duration-700
-         max-h-[400px] lg:max-h-none
-         hover:grayscale hover:scale-105" alt="Advogada">
+    <script src="https://cdn.jsdelivr.net/npm/emailjs-com@3/dist/email.min.js"></script>
 
-        </div>
-        <div
-          class="hidden sm:block floating-shape absolute -bottom-10 -left-10 w-32 h-32 lg:w-40 lg:h-40 border-2 border-[#D4AF37] -z-10">
-        </div>
-      </div>
-    </div>
-  </section>
+    <!-- GSAP PRIMEIRO -->
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.12.2/gsap.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.12.2/ScrollTrigger.min.js"></script>
 
-  <section id="areas" class="py-16 md:py-24 bg-white">
-    <div class="container mx-auto px-6">
-      <div class="text-center mb-12 md:mb-16">
-        <h2 class="text-3xl md:text-4xl font-serif text-stone-800">Especialidades</h2>
-        <div class="w-20 h-1 bg-[#621B2E] mx-auto mt-4"></div>
-      </div>
-
-      <div class="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 gap-6 md:gap-10">
-        <div class="service-card p-8 md:p-10 bg-[#f9f9f9] border border-stone-100 relative group overflow-hidden">
-          <div
-            class="card-bg absolute inset-0 bg-[#1c1c1c] translate-y-full transition-transform duration-500 group-hover:translate-y-0">
-          </div>
-          <div class="relative z-10 transition-colors duration-500 group-hover:text-white">
-            <span class="text-3xl md:text-4xl block mb-6">⚖️</span>
-            <h3 class="text-xl md:text-2xl font-serif mb-4">Direito Civil</h3>
-            <p class="text-stone-500 group-hover:text-stone-300 text-sm md:text-base">Consultoria completa para proteção
-              de bens e direitos individuais.</p>
-          </div>
-        </div>
-        <div class="service-card p-8 md:p-10 bg-[#f9f9f9] border border-stone-100 relative group overflow-hidden">
-          <div
-            class="card-bg absolute inset-0 bg-[#621B2E] translate-y-full transition-transform duration-500 group-hover:translate-y-0">
-          </div>
-          <div class="relative z-10 transition-colors duration-500 group-hover:text-white">
-            <span class="text-3xl md:text-4xl block mb-6">💼</span>
-            <h3 class="text-xl md:text-2xl font-serif mb-4">Empresarial</h3>
-            <p class="text-stone-500 group-hover:text-stone-300 text-sm md:text-base">Blindagem jurídica para empresas
-              em crescimento exponencial.</p>
-          </div>
-        </div>
-        <div class="service-card p-8 md:p-10 bg-[#f9f9f9] border border-stone-100 relative group overflow-hidden">
-          <div
-            class="card-bg absolute inset-0 bg-[#1c1c1c] translate-y-full transition-transform duration-500 group-hover:translate-y-0">
-          </div>
-          <div class="relative z-10 transition-colors duration-500 group-hover:text-white">
-            <span class="text-3xl md:text-4xl block mb-6">🌿</span>
-            <h3 class="text-xl md:text-2xl font-serif mb-4">Ambiental</h3>
-            <p class="text-stone-500 group-hover:text-stone-300 text-sm md:text-base">Adequação e defesa em normas de
-              sustentabilidade e compliance.</p>
-          </div>
-        </div>
-      </div>
-    </div>
-  </section>
-
-  <section id="contato" class="py-16 md:py-24 bg-[#1c1c1c] text-white">
-    <div class="container mx-auto px-6 max-w-4xl">
-      <div class="grid grid-cols-1 md:grid-cols-2 gap-12">
-
-        <!-- TEXTO -->
-        <div class="text-center md:text-left">
-          <h2 class="text-3xl md:text-4xl font-serif mb-6">Vamos conversar?</h2>
-          <p class="text-stone-400 mb-8">
-            Preencha o formulário ou chame diretamente no WhatsApp para um atendimento prioritário.
-          </p>
-          <div class="space-y-4 text-sm md:text-base">
-            <p>📍 Av. Paulista, 1000 - SP</p>
-            <p>📧 contato@advocacia.com.br</p>
-          </div>
-        </div>
-
-        <!-- FORMULÁRIO -->
-        <form id="contact-form" class="space-y-4 text-stone-900">
-          <input type="text" name="nome" placeholder="Seu Nome" required
-            class="w-full p-4 bg-stone-100 focus:outline-none focus:ring-2 ring-[#D4AF37]" />
-
-          <input type="email" name="email" placeholder="Seu E-mail" required
-            class="w-full p-4 bg-stone-100 focus:outline-none focus:ring-2 ring-[#D4AF37]" />
-
-          <textarea name="mensagem" placeholder="Como posso ajudar?" rows="4" required
-            class="w-full p-4 bg-stone-100 focus:outline-none focus:ring-2 ring-[#D4AF37]"></textarea>
-
-          <button type="submit" class="w-full py-4 bg-[#621B2E] text-white font-bold uppercase tracking-widest
-                 hover:bg-white hover:text-[#1c1c1c] transition duration-500 text-xs">
-            Enviar Mensagem
-          </button>
-        </form>
-
-      </div>
-    </div>
-  </section>
-
-  <!-- POPUP DE SUCESSO -->
-  <div id="success-popup"
-    class="fixed inset-0 bg-black/60 flex items-center justify-center opacity-0 pointer-events-none transition duration-500 z-[999]">
-
-    <div class="bg-white rounded-lg p-8 max-w-sm text-center transform scale-90 transition duration-500">
-      <h3 class="text-2xl font-serif text-[#621B2E] mb-4">
-        Mensagem enviada!
-      </h3>
-      <p class="text-stone-600 mb-6 text-sm">
-        Recebemos seu contato e em breve retornaremos.
-      </p>
-      <button onclick="closePopup()"
-        class="bg-[#621B2E] text-white px-6 py-2 rounded-full text-sm hover:bg-[#4e1525] transition">
-        Fechar
-      </button>
-    </div>
-  </div>
-
-  <script src="https://cdn.jsdelivr.net/npm/emailjs-com@3/dist/email.min.js"></script>
-
-  <!-- GSAP PRIMEIRO -->
-  <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.12.2/gsap.min.js"></script>
-  <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.12.2/ScrollTrigger.min.js"></script>
-
-  <script src="js/animations.js"></script>
-  <script src="js/main.js"></script>
-  <script src="js/form.js"></script>
-
-</body>
-
+    <script src="js/animations.js"></script>
+    <script src="js/main.js"></script>
+    <script src="js/form.js"></script>
+  </body>
 </html>

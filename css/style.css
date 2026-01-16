@@ -30,3 +30,66 @@ body {
 ::-webkit-scrollbar { width: 8px; }
 ::-webkit-scrollbar-track { background: #1c1c1c; }
 ::-webkit-scrollbar-thumb { background: #621B2E; }
+
+/* ================================
+   POLÍTICA DE PRIVACIDADE
+================================ */
+
+.privacy-container {
+  max-width: 900px;
+  margin: 0 auto;
+  padding: 6rem 1.5rem 4rem;
+}
+
+.privacy-container h1 {
+  font-family: 'Cormorant Garamond', serif;
+  font-size: 2.5rem;
+  color: #621B2E;
+  margin-bottom: 2rem;
+}
+
+.privacy-container h2 {
+  font-family: 'Cormorant Garamond', serif;
+  font-size: 1.6rem;
+  color: #1c1c1c;
+  margin-top: 3rem;
+  margin-bottom: 1rem;
+}
+
+.privacy-container p {
+  font-family: 'Montserrat', sans-serif;
+  font-size: 0.95rem;
+  color: #444;
+  line-height: 1.8;
+  margin-bottom: 1rem;
+}
+
+.privacy-container ul {
+  margin-left: 1.5rem;
+  margin-top: 1rem;
+}
+
+.privacy-container li {
+  list-style: disc;
+  font-size: 0.95rem;
+  color: #444;
+  margin-bottom: 0.5rem;
+}
+
+.privacy-divider {
+  width: 80px;
+  height: 3px;
+  background-color: #621B2E;
+  margin: 1.5rem 0 3rem;
+}
+
+/* Mobile ajustes */
+@media (max-width: 640px) {
+  .privacy-container {
+    padding-top: 5rem;
+  }
+
+  .privacy-container h1 {
+    font-size: 2rem;
+  }
+}
